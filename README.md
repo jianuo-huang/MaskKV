@@ -59,7 +59,7 @@ Experiments on **LLaDA-8B** and **Dream-7B** show consistent gains in accuracy, 
 
 | Metric | Result |
 |:--|:--|
-| **Accuracy** | Retains **94%** of full-cache performance on *LongBench* with only **256 KV pairs (<5% tokens)** |
+| **Accuracy** | Retains up to **98.7%** (Dream-7B) and **94.3%** (LLaDA-8B) of full-cache performance on *LongBench* with the cache compressed to just **256 KV pairs** (<5% of tokens). |
 | **Speed** | Achieves up to **31× faster decoding** at 32k prompt length |
 | **Memory** | Reduces peak memory by **65%**, enabling **8× longer prompts** on a single GPU |
 
@@ -81,11 +81,14 @@ We sincerely thank the authors of these works for their open-source contribution
 
 ## Citation
 ```
-@article{huang2025maskkv,
-  title={Mask Tokens as Prophet: Fine-Grained Cache Eviction for Efficient dLLM Inference},
-  author={Huang, Jianuo and Zhang, Yaojie and Yang, Yicun and Huang, Benhao and Qi, Biqing and Liu, Dongrui and Zhang, Linfeng},
-  journal={arXiv preprint arXiv:2510.09309},
-  year={2025}
+@misc{huang2025masktokensprophetfinegrained,
+      title={Mask Tokens as Prophet: Fine-Grained Cache Eviction for Efficient dLLM Inference}, 
+      author={Jianuo Huang and Yaojie Zhang and Yicun Yang and Benhao Huang and Biqing Qi and Dongrui Liu and Linfeng Zhang},
+      year={2025},
+      eprint={2510.09309},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2510.09309}, 
 }
 ```
 
